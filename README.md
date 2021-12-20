@@ -4,7 +4,7 @@ Snake-Änderungen:
 
 Verwendung von LocalStorage statt Cookies zum Speichern der HighScores
 
-Aufspalten des Codes in meherer Dateien, also verwendung von Modules
+Aufspalten des Codes in meherere Dateien, also verwendung von Modules
 
 Lesbarkeit des Codes zur Verarbeitung der HighScores erhöht, indem Code in weitere Methoden geteilt wurde.
 
