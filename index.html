@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Snake von Pascal Siemer zur Bewerbung zum Anwendungsentwickler</title>
+        <style>
+            body {
+                margin: 0;
+            }
+            canvas {
+                border: 2px solid black;
+                margin: 0 auto;
+                padding: 0;
+                display: none;
+            }
+            form {
+                display: inline;
+            }
+            #content {
+                margin: 0 auto;
+            }
+            #controls {
+                display:none;
+            }
+            #highScoreContent {
+                display: none;
+            }
+
+        </style>
+        <script type="module" src="./game.js" defer></script>
+    </head>
+    <body>
+        <div id="content">
+            <h1>Snake</h1>
+            <div id="difficultyBlock">
+                Schwierigkeitsgrad: 
+                <form>
+                    <select id="difficultyList" name="difficultyList">
+                        <option value="Normal" disabled selected> - Auswahl - </option>
+                        <option value="Easy">Easy</option>
+                        <option value="Normal">Normal</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+                    <input type="button" id="startButton" value="Start!">
+                </form>
+            </div>
+            <br>
+            <p id="controls">Steuerung: W, A, S und D, sowie Pfeiltasten.</p>
+            <canvas id="canvas"></canvas>
+            <div id="output"></div>
+            <div id="highScoreContent">
+                <p id="highScoreHeadline">HighScores:</p>
+                <div id="highScore"></div>
+                <input type="button" id="deleteHighScores" value="Alle Highscores loeschen (LocalStorage-Eintraege loeschen)">
+            </div>
+        </div>
+    </body>
+</html>
